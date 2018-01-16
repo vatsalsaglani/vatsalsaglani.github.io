@@ -9,8 +9,7 @@ body, html{
     height: 100%;
     background: url(01.jpg) no-repeat;
     background-size: cover;
-    font-family: 'Joti One', cursive;
-}
+    font-family: 'Play', sans-serif;}
 
 .container{
     width: 100%;
@@ -29,11 +28,35 @@ body, html{
     transform: translate(-50%, -50%);
 }
 
+.container h3{
+    color: white;
+    font-size: 20px;
+    font-weight: 250;
+    text-align: center;
+    position: relative;
+    top: 70%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+
+
+
 .container h1 span{
     display: block;
-    background: #2ecc71;
+    background: #16a085;
     padding: 0 10px;
 }
+
+.container h3 span {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+.container h3 span a {
+    color: inherit;
+}
+
 
 .menu{
     position: absolute;
@@ -49,7 +72,7 @@ body, html{
     height: 3px;
     display: block;
     margin: 6px;
-    background: black;
+    background: white;
     transition: 0.4s all;
 
 }
@@ -67,3 +90,35 @@ body, html{
     width: 100%;
 }
 
+.btn{
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    animation: shake 0.6s infinite;
+}
+
+@keyframes shake {
+    0%{
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    25%{
+        transform: translate(1px, 1px) rotate(1deg);
+    }
+    50%{
+        transform: translate(-1px, -1px) rotate(-1deg);
+    }
+    75%{
+        transform: translate(2px, -1px) rotate(2deg);
+    }
+    100%{
+        transform: translate(-1px, 1px) rotate(-1deg);
+    }
+}
+
+@media only screen and (max-device-width: 400px){
+    body{
+        background: url(01c.jpg);
+    }
+}
