@@ -90,6 +90,24 @@ body, html{
     width: 100%;
 }
 
+#loader{
+    height: 1500px;
+    width: 1500px;
+    background-color: #0F1217;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+#loader img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .btn{
     padding: 10px 20px;
     cursor: pointer;

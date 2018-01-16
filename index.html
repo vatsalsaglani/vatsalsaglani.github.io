@@ -10,6 +10,10 @@
     <title>theVATSALSAGLANI|COMING SOON..</title>
 </head>
 <body>
+    <div id="loader">
+        <img src="source.gif" width="30%" />
+    
+    </div>
     <div class="menu">
         <span class="s1"></span>
         <span class="s2"></span>
@@ -28,4 +32,13 @@
 
     
 </body>
+<script type="text/javascript">
+    var loader = document.getElementById("loader");
+    window.addEventListener("load", function(){
+        loader.style.height = "100px";
+        loader.style.width = "100px";
+        loader.style.borderRadius = "50%";
+        loader.style.visibility = "hidden"
+    })
+    </script>
 </html>
