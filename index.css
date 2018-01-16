@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+    background: url(01.jpg) no-repeat;
+    background-size: cover;
+    font-family: 'Joti One', cursive;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: #3498db80;
+}
+
+.container h1{
+    color: white;
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container h1 span{
+    display: block;
+    background: #2ecc71;
+    padding: 0 10px;
+}
+
+.menu{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    overflow: hidden;
+    width: 50px;
+    cursor: pointer;
+
+}
+
+.menu span {
+    height: 3px;
+    display: block;
+    margin: 6px;
+    background: black;
+    transition: 0.4s all;
+
+}
+
+.s1, .s3{
+    width: 100%;
+
+} 
+
+.s2{
+    width: 50%;
+}
+
+.menu:hover > .s2{
+    width: 100%;
+}
+
